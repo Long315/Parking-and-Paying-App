@@ -1,0 +1,4 @@
+// this is a generated file - DO NOT EDIT
+
+HYPERLOOP_OTHER_LDFLAGS=$(inherited) $(HYPERLOOP_LDFLAGS)
+OTHER_LDFLAGS=$(inherited) $(HYPERLOOP_OTHER_LDFLAGS) 
