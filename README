@@ -1,7 +1,15 @@
 Project for SOFTENG 750 & COMPSCI 732: Software Development Methodologies
 
+Parking Space Searching and Payment Application on Automobile Platform
 
-
+Introduction
+Basing on the fast development of mobile devices, cross-platform application is dominating
+the existing application store nowadays. In our project, we choose to use Appcelerator
+Titanium framework to develop a cross-platform application which will use GPS location technique,
+appcelerator cloud service and JavaScript language. It could provide a convenient and effective
+parking system for mobile phone users. Android and iOS users could use it to fulfill the
+searching surrounding parking places and paying for their parking fees.  Each of users has their own
+account, the relevant data of users and parking places should be saved at cloud database.
 
 
 
