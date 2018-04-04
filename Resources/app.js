@@ -1,50 +1,22 @@
-/**
- * Create a new `Ti.UI.TabGroup`.
- */
-var tabGroup = Ti.UI.createTabGroup();
+var Cloud = require('ti.cloud');
+var WindowManager = require('helper/WindowManager');
+var Utils = require('helper/Utils');
+Cloud.debug = true;
 
-/**
- * Add the two created tabs to the tabGroup object.
- */
-tabGroup.addTab(createTab("Tab 1", "Hello, Long!", "assets/images/tab1.png"));
-tabGroup.addTab(createTab("Tab 2", "Hello, Jing!", "assets/images/tab2.png"));
+ var viewTables = {
+		type_accounts: {
+			view_login: "/views/accounts/login",
+			view_logup: "/views/accounts/logup"
+		},
+		type_places:{
+			
+		}
+	};
 
-/**
- * Open the tabGroup
- */
-tabGroup.open();
+var win = WindowManager.getWindowByPos(viewTables.type_accounts.view_login);
 
-/**
- * Creates a new Tab and configures it.
- *
- * @param  {String} title The title used in the `Ti.UI.Tab` and it's included `Ti.UI.Window`
- * @param  {String} message The title displayed in the `Ti.UI.Label`
- * @return {String} icon The icon used in the `Ti.UI.Tab`
- */
-function createTab(title, message, icon) {
-    var win = Ti.UI.createWindow({
-        title: title,
-        backgroundColor: '#fff'
-    });
+win.open();
 
-    var label = Ti.UI.createLabel({
-        text: message,
-        color: "#333",
-        font: {
-            fontSize: 20
-        }
-    });
-
-    win.add(label);
-
-    var tab = Ti.UI.createTab({
-        title: title,
-        icon: icon,
-        window: win
-    });
-
-    return tab;
-}
 
 
 // added during app creation. this will automatically login to
