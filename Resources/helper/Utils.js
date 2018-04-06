@@ -1,3 +1,7 @@
+/**
+ * @author Hualong Zhu
+ */
+
 // Find out if this is iOS # or greater
 function isIOSVersionPlus(versionNumber) {
   if (Titanium.Platform.name == 'iPhone OS') {

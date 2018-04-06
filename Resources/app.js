@@ -1,3 +1,8 @@
+/**
+ * @author Hualong Zhu
+ * @date 4/04/2018
+ */
+
 var Cloud = require('ti.cloud');
 var WindowManager = require('helper/WindowManager');
 var Utils = require('helper/Utils');
@@ -9,11 +14,11 @@ Cloud.debug = true;
 			view_logup: "/views/accounts/logup"
 		},
 		type_places:{
-			
+			view_map:"/views/places/map"
 		}
 	};
 
-var win = WindowManager.getWindowByPos(viewTables.type_accounts.view_login);
+var win = WindowManager.getWindow(viewTables.type_accounts.view_login);
 
 win.open();
 

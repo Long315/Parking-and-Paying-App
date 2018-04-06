@@ -38,6 +38,12 @@
                 <false/>
                 <key>UIStatusBarStyle</key>
                 <string>UIStatusBarStyleDefault</string>
+                <key>NSLocationWhenInUseUsageDescription</key>
+                <string>1</string>
+                <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+                <string>2</string>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <string>3</string>
             </dict>
         </plist>
     </ios>
@@ -45,6 +51,8 @@
     <modules>
         <module platform="iphone">hyperloop</module>
         <module platform="commonjs">ti.cloud</module>
+        <module platform="iphone">ti.map</module>
+        <module platform="android">ti.map</module>
     </modules>
     <deployment-targets>
         <target device="android">false</target>

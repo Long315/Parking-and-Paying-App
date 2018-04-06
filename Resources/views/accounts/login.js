@@ -87,6 +87,10 @@ exports['getWindow'] = function(evt) {
 				var user = e.users[0];
 				login.value = password.value = '';
 				alert('Logged in! You are now logged in as ' + user.id);
+				
+				var mapWin = WindowManager.getWindow(viewTables.type_places.view_map);
+				mapWin.open();
+				
 			} else {
 				Utils.error(e);
 			}
@@ -102,7 +106,7 @@ exports['getWindow'] = function(evt) {
 	}
 	
 	buttonLogup.addEventListener('click',function(){
-		var winLogup = WindowManager.getWindowByPos(viewTables.type_accounts.view_logup);
+		var winLogup = WindowManager.getWindow(viewTables.type_accounts.view_logup);
 		
 		winLogup.open();
 	});

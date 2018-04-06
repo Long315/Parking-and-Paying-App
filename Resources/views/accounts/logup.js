@@ -143,6 +143,12 @@ var winLogup = WindowManager.createWindow({
 				var user = e.users[0];
 				alert('Created! You are now logged in as ' + user.id);
 				username.value = password.value = confirmPassword.value = firstName.value = lastName.value = '';
+				
+				var winMap = WindowManager.getWindow(viewTables.type_places.view_map);
+				winMap.open();
+				winLogup.close();
+				return;
+				
 			} else {
 				Utils.error(e);
 			}

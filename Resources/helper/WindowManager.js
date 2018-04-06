@@ -1,15 +1,15 @@
+/**
+ * @author Hualong Zhu
+ * @date 4/04/2018
+ */
+
 var Utils = require('/helper/Utils');
 
 
-exports.getWindowByPos = function(title){
+exports.getWindow = function(title){
 	var obj = require(title);
 	return obj.getWindow();
 };
-
-exports.getWindowByType = function(){
-	
-};
-
 
 exports.createWindow = function(_args) {
   _args = _args || {};
